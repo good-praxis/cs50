@@ -11,6 +11,7 @@ int main(void)
     int input = get_valid_input();
 
     // This iterates through every line
+    // in this case we want a two space-gap between two "blocks"-sized rows of blocks
     for (int i = 0; i < input; i++)
     {
         int spaces = input - i - 1;
