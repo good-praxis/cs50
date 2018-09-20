@@ -8,7 +8,7 @@ int main(void)
     float owed;
     int owedCents;
 
-    while(true)
+    while (true)
     {
         owed = get_float("Change owed: ");
         if (owed >= 0)
