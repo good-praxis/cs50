@@ -28,12 +28,12 @@ int main(void)
         // Every second number is multiplied by 2 and it's digits are added to the sum
         if (i % 2 == 0)
         {
-            digit = digit * 2;
+            digit *= 2;
             if (digit >= 10)
             {
-                sum = sum + digit / 10;
+                sum += digit / 10; //sum += digit
             }
-            sum = sum + digit % 10;
+            sum += digit % 10;
 
 
         }
@@ -41,7 +41,7 @@ int main(void)
         // Every other number is added to the sum directly
         else
         {
-            sum = sum + digit;
+            sum += digit;
         }
 
         // Once we reach the last two digits we determine the card type
@@ -51,7 +51,7 @@ int main(void)
         }
 
         // After every iteration we take off the last digit of the input
-        input = input / 10;
+        input /= 10;
     }
 
     // Last but not least we take the checksum
