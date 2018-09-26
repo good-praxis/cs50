@@ -24,13 +24,13 @@ int main(void)
     coins = owedCents / 25;
 
     // Now let's get the 10 cent pieces
-    coins = coins + (owedCents % 25) / 10;
+    coins += (owedCents % 25) / 10;
 
     // And let's get the 5 cents
-    coins = coins + (owedCents % 25 % 10 / 5);
+    coins += (owedCents % 25 % 10 / 5);
 
     // and let's finish up
-    coins = coins + owedCents % 5;
+    coins += owedCents % 5;
 
 
     printf("%d\n", coins);
