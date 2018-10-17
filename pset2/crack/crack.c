@@ -55,7 +55,6 @@ int main(int argc, string argv[])
 
 bool crack_one_letter_password()
 {
-    printf("starting with one_letter_passwords\n");
 
     for (int i = 0; i < 52; i++)
     {
@@ -71,7 +70,6 @@ bool crack_one_letter_password()
 
 bool crack_two_letter_password()
 {
-    printf("cracking two letters\n");
 
     for (int i = 0; i < 52; i++)
     {
@@ -90,7 +88,6 @@ bool crack_two_letter_password()
 
 bool crack_three_letter_password()
 {
-    printf("What about three??\n");
 
     for (int i = 0; i < 52; i++)
     {
@@ -114,7 +111,6 @@ bool crack_four_letter_password()
 {
     for (int i = 0; i < 52; i++)
     {
-        printf("cracking %cxxx\n", key_possibilities[i]);
         for (int j = 0; j < 52; j++)
         {
             for (int k = 0; k < 52; k++)
